@@ -1,0 +1,161 @@
+1) & 2) 	mkdir project1
+ 	cd project1
+	git init
+   	git remote add origin https://github.com/Garvshah01/test_project.git
+	git push origin master
+	cat > README
+	git add .
+	git commit -m "ReadMe"
+	git push origin master
+
+3) git checkout -b staging
+   	git log
+
+4) 	nano test1
+	git add .
+  	git commit -m "This is first Commit"
+
+5)  	git push origin staging
+
+6)  	cd ..
+  	mkdir project2
+  	cd project2
+
+ 7) 	git clone https://github.com/Garvshah01/test_project
+	cd test_project
+
+ 8) git checkout staging
+ 
+9) 	nano test1
+  	git add .
+  	git commit -m "This is second commit"
+
+10)	git push origin staging
+
+11)	cd ..
+  	cd ..
+  	cd project1
+
+12) git checkout staging
+
+13)	 nano test1
+  	git add .
+  	git commit -m "This is thrid commit"
+
+14)git push origin staging
+  	git pull origin staging
+  	git status
+  	nano test1
+  	git add .
+  	git commit -m "pull the updated staging branch content"
+	git push origin staging
+	
+Explaination :- push command is denied because of difference between content of local and remote file, so the correct procedure is first pull then push after resolving conflicts.	
+
+15)	git switch master
+ 
+16)git merge staging
+
+17) git checkout -b testing
+  	
+18)	nano test1
+  	git add .
+  	git commit -m "a 1"
+19)	nano test1
+  	git add .
+  	git commit -m "b 2"
+  	nano test1
+  	git add .
+  	git commit -m "c 3"
+  	nano test1
+  	git add .
+  	git commit -m "d 4"
+  	nano test1
+  	git add .
+  	git commit -m "e 5"
+  	nano test1
+  	git add .
+  	git commit -m "f 7"
+  	nano test1
+  	git add .
+  	git commit -m "G 7"
+20) git push origin testing
+
+21) git checkout master
+ 
+22)nano test1
+  	git add .
+  	git commit -m "1"
+  
+23) nano test1
+  	git add .
+  	git commit -m "2"
+  	nano test1
+  	git add .
+  	git commit -m "3"
+  	nano test1
+  	git add .
+  	git commit -m "4"
+  	nano test1
+  	git commit -m "5"
+  	git add .
+  	git commit -m "5"
+  	nano test1
+  	git add .
+  	git commit -m "6"
+  	nano test1
+  	git add .
+  	git commit -m "7"
+
+24) git push origin master
+
+25) git checkout testing
+  	git rebase master -m "rebase testing"
+  	git rebase master
+  	git status
+  	nano test1
+  	git add .
+  	git commit -m "rebase master"
+  	git rebase --continue
+  	git status
+  	nano test1
+  	git add .
+  	git commit -m "rebase for B"
+  	git rebase --continue
+  	nano test1
+  	git add .
+  	git commit -m "rebase for C"
+  	git rebase --continue
+  	nano test1
+  	 git add .
+  	git commit -m "rebase for D"
+  	git rebase --continue
+  	nano test1
+  	 git add .
+  	git commit -m "rebase for E"
+  	  git commit -m "rebase for E"
+  	git rebase --continue
+  	nano test1
+  	git add .
+  	git commit -m "rebase for F"
+  	git rebase --continue
+  	nano test1
+  	git add .
+  	git commit -m "rebase for G"
+  	git rebase --continue
+  	git checkout master
+  	git rebase testing
+  	git log
+
+26) cd ..
+  	cd project2
+    	cd test_project/
+  	git ckeckout testing
+	git checkout -b testing
+
+28) git checkout master
+  
+29) git merge testing
+
+30) git diff testing master
+	// no difference because master is empty before merging and after merging master is just like testing so no change.
