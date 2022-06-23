@@ -115,33 +115,25 @@ Explaination :- push command is denied because of difference between content of 
   	git status
   	nano test1
   	git add .
-  	git commit -m "rebase master"
   	git rebase --continue
   	git status
   	nano test1
   	git add .
-  	git commit -m "rebase for B"
   	git rebase --continue
   	nano test1
   	git add .
-  	git commit -m "rebase for C"
   	git rebase --continue
   	nano test1
   	 git add .
-  	git commit -m "rebase for D"
   	git rebase --continue
   	nano test1
   	 git add .
-  	git commit -m "rebase for E"
-  	  git commit -m "rebase for E"
   	git rebase --continue
   	nano test1
   	git add .
-  	git commit -m "rebase for F"
   	git rebase --continue
   	nano test1
   	git add .
-  	git commit -m "rebase for G"
   	git rebase --continue
   	git checkout master
   	git rebase testing
